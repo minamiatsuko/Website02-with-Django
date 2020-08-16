@@ -32,8 +32,8 @@ def contact(request):
         email = request.POST['email']
         desc = request.POST['desc']
         print(name, email, desc)
-        ins = Contact(name=name, email=email, desc=desc)
-        ins.save()
+        contact = Contact(name=name, email=email, desc=desc)
+        contact.save()
         print("The data has been written to the db")
 
     context = {"name": 'Nan', 'from':'Django'}
