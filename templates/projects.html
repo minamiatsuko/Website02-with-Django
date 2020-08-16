@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid mt-0 px-0 ">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-indicators">
+          <div data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></div>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/1900x400/?coding,web, developer, study"  class="d-block w-100" alt="...">
+          </div>
+        </div>
+   </div>
+</div>
+
+<div class="conatiner mt-5">
+    <h1 class="text-center">Projects&Study </h1>
+</div>
+ 
+
+<div class="container mt-3 mb-5">
+  <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-6">
+           <div class="card mt-5" style="max-width: 18rem;">
+                <img src="{% static 'img/haseblo.png' %}" class="card-img-top" alt="..." data-lightbox="haseblo">
+                <div class="card-body">
+                    <h5 class="card-title">ハセブロ公式Webサイト</h5>
+                    <p class="card-text">活動内容ページ担当</p>
+                    <p>チーム開発　Html、Css、Git使用</p>
+                    <a href="{% static 'img/haseblo.png'%}" data-lightbox="haseblo" class="btn btn-primary">Go somewhere</a>
+                    <a href="{% static 'img/haseblo02.png' %}" data-lightbox="haseblo"></a>
+                     <a href="{% static 'img/haseblo03.png' %}" data-lightbox="haseblo"></a>           
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-6">
+           <div class="card mt-5" style="max-width: 18rem;">
+                <img src="https://source.unsplash.com/1900x1000/?web, animation," class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">animeJS</h5>
+                    <p class="card-text">アニメーション作成</p>
+                    <a href="/anime" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="card mt-5" style="max-width: 18rem;">
+                <img src="https://source.unsplash.com/1900x1000/?javascript,web, app," class="card-img-top" alt="..."data-lightbox="js">
+                <div class="card-body">
+                    <h5 class="card-title">Javascript</h5>
+                    <p class="card-text">おみくじアプリ</p>
+                    <p class="card-text">機能：クリックでランダムに結果が表示</p>
+                    <a href="{% static 'img/js01.png' %}" class="btn btn-primary" data-lightbox="js">Go somewhere</a>
+                     <a href="{% static 'img/omikuji.png' %}" data-lightbox="js"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-6">
+           <div class="card mt-5" style="max-width: 18rem;">
+                <img src="https://source.unsplash.com/1900x1000/?api, AI" class="card-img-top" alt="..."data-lightbox="tensorflow">
+
+                <div class="card-body">
+                    <h5 class="card-title">API画像取得（演習）</h5>
+                    <p class="card-text">ファイルに振り分け</p>
+                    <a href="{% static 'img/tensorflow01.png' %}" class="btn btn-primary"data-lightbox="tensorflow">Go somewhere</a>
+
+                    <a href="{% static 'img/tensorflow02.png' %}" data-lightbox="tensorflow"></a>
+                    <a href="{% static 'img/tensorflow03.png' %}" data-lightbox="tensorflow"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="card mt-5" style="max-width: 18rem;">
+                <img src="https://source.unsplash.com/1900x1000/?programming, code,foto" class="card-img-top" alt="..." data-lightbox="numpy">
+
+                <div class="card-body">
+                    <h5 class="card-title">NumPy配列に変換（演習）</h5>
+                    <p class="card-text">jupyter　Noteboo.</p>
+                    <p class="card-text">ライブラリー：pillow, sklearn</p>
+                    <a href="{% static 'img/NumPy01.png' %}" class="btn btn-primary"data-lightbox="numpy">Go somewhere</a>
+
+                    <a href="{% static 'img/NumPy02.png' %}" data-lightbox="numpy"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+           <div class="card mt-5" style="max-width: 18rem;">
+                <img src="https://source.unsplash.com/1900x1000/?project, web" class="card-img-top" alt="..." data-lightbox="yokenteigi">
+                <div class="card-body">
+                    <h5 class="card-title">システム開発工程について</h5>
+                    <p class="card-text">プロジェクト計画書、要件定義の書きかt</p>
+                    <a href="{% static 'img/yokenteigi.png' %}" class="btn btn-primary" data-lightbox="yokenteigi">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+           <div class="card mt-5" style="max-width: 18rem;">
+                <img src="https://source.unsplash.com/1900x1000/? design, web" data-lightbox="banner" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">デザインカンプ&バナー作成</h5>
+                    <p class="card-text">Photoshop, Illustrator使用</p>
+                    <a href="{% static 'img/banner01.jpg'%}" data-lightbox="banner" class="btn btn-primary">Go somewhere</a>
+
+                    <a href="{% static 'img/german.png' %}" data-lightbox="banner" ></a>
+                    <a href="{% static 'img/cosme.png' %}" data-lightbox="banner" ></a>
+                    <a href="{% static 'img/lp01.jpg' %}" data-lightbox="banner" ></a>   
+                    <a href="{% static 'img/lp02.jpg' %}" data-lightbox="banner" ></a>   
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+           <div class="card mt-5" style="max-width: 18rem;">
+                <img src="{% static 'img/hanga.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">イラスト</h5>
+                    <p class="card-text">木版画・リトグラフ</p>
+                    <p class="card-text">アクリル画・水彩画</p>
+                    <a href="https://atsuko-minami.jimdofree.com/" class="btn btn-primary">Go somewhere</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+           <div class="card mt-5" style="max-width: 18rem;">
+                <img src="https://source.unsplash.com/1900x1000/?video,web, sound" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">動画編集、テロップ、効果音</h5>
+                    <p class="card-text">Filmora9を使用。</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+
+  </div>
+</div>
+
+{% endblock content %}

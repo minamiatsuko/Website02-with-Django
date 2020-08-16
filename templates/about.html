@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid mt-0 px-0 ">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-indicators">
+          <div data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></div>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/1900x400/?coding,web, developer"  class="d-block w-100" alt="...">
+          </div>
+        </div>
+   </div>
+</div>
+
+<div class="conatiner mt-5">
+    <h1 class="text-center">About me </h1>
+</div>
+
+<div class="container  mt-3 mb-5">
+            <div class="card" style="width: 100%;">
+                <div class="row no-gutters">
+                <div class="col-md-4 col-xs-12 mx-auto">
+                    <img src="{% static 'img/kao.png' %}" class="card-img" alt="...">
+                </div>
+            <div class="col-md-8 col-xs-12">
+                <div class="card" style="max-width: 60rem;">
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item">氏名:　なん</li>
+                    <li class="list-group-item">出身：　東京、千葉、ドイツ</li>
+                    <li class="list-group-item">学歴：　多摩美術大学院 絵画学科 版画専攻、メディアアーツ尚美専門学校</li>
+                    <li class="list-group-item">心がけ：
+                        「モノを生み出す努力」「創造し続ける忍耐力」「事実に元づく想像」</li>
+                    <li class="list-group-item">お客様が求めているご要望にお応えする努力を惜しまず、楽しく。</li>
+                    <li class="list-group-item">好きな事：　多肉植物栽培、散歩、自由に踊る、キャンプ、版画</li>
+                    <li class="list-group-item">Github：
+                        <a class="btn02" href="https://github.com/minamiatsuko?tab=repositories" >Link
+                        </a></li>
+                    <li class="list-group-item">Blog：
+                        <a class="btn02" href="https://kitztzki.com" >
+                        キツツキブログlink
+                        </a></li>
+                </ul>
+                </div>
+            </div>
+</div>
+   
+   
+{% endblock content %}

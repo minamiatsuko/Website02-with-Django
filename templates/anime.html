@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="conatiner mt-5">
+    <h1 class="text-center">Animation </h1>
+</div>
+
+
+<div class="card mb-3">
+       {% include 'anime01.html' %}
+  <div class="card-body">
+    <h5 class="card-title">SVGアニメーション</h5>
+    <p class="card-text">イラストレーター、anime.js、SVG Artista使用</p>
+    <p class="card-text"><small class="text-muted"></small></p>
+  </div>
+</div>
+
+
+<div class="card mb-3">
+       
+  <div class="card-body">
+    <h5 class="card-title">{% include 'anime02.html' %}　SVGアニメーション</h5>
+    <p class="card-text">イラストレーター、anime.js、SVG Artista使用</p>
+    <p class="card-text"><small class="text-muted"></small></p>
+  </div>
+</div>
+   
+{% endblock content %}
